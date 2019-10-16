@@ -10,5 +10,7 @@ To run the block chain follow these steps:
       1.open cmd or teminal in your system.
 
       2.navigate to the folder where the downloaded file is using cd command.
+      
+      3.npm install crypto-js
 
-      3.now type "Node Trackchain.js' to see the the blockchain.
+      4.now type "Node Trackchain.js' to see the the blockchain.
