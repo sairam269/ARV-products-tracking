@@ -1,0 +1,40 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+</head>
+<body>
+<div class="outer">
+	<div class="prod-logo">
+		<img src="https://github.com/abhinanduN/codepen/blob/master/prod.png?raw=true" class="prod-img" alt="icon"/>
+		<ul class="main-nav">
+			<li class="nav-li"><a href="index.html">Home</a></li>
+			<li class="nav-li"><a href="#">About</a></li>
+			<li class="nav-li"><a href="file.html">Manufacture Details</a></li>
+			<li class="nav-li"><a href="tc.html">Transport Detail</a></li>
+      <li class="nav-li"><a href="view.html">Track product</a></li>
+      </ul>
+	</div>
+	<div class="inner">
+		<div class="prod-left">
+			<h1 class="prod-head"><span style="color:#0f457f">ARV</span> TRACKING!</h1>
+			<h4 class="prod-head-sub">Better Health for a Better World</h4>
+		</div>
+		<div class="prod-right">
+			<img src="https://github.com/abhinanduN/codepen/blob/master/human-image.png?raw=true" class="prod-human-img" alt="prod"/>
+		</div>
+	</div>
+</div>
+<script>
+$(".prod-logo").hover(function () {
+    $(".inner").addClass("inner-hover");
+    $(".nav-li").slideDown(500);
+  },
+  function () {
+    $(".inner").removeClass("inner-hover");
+   $(".nav-li").slideUp(500);
+  }
+);
+</script>
+</body>
+</html>

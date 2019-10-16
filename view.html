@@ -1,0 +1,48 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+	<script type="text/javascript" src="transportChain.js"></script>
+</head>
+<body>
+<div class="outer">
+	<div class="prod-logo">
+		<img src="https://github.com/abhinanduN/codepen/blob/master/prod.png?raw=true" class="prod-img" alt="icon"/>
+		<ul class="main-nav">
+			<li class="nav-li"><a href="index.html">Home</a></li>
+			<li class="nav-li"><a href="#">About</a></li>
+			<li class="nav-li"><a href="file.html">Manufacture Details</a></li>
+			<li class="nav-li"><a href="tc.html">Transport Detail</a></li>
+      <li class="nav-li"><a href="view.html">Track product</a></li>
+      </ul>
+	</div>
+	<div class="inner">
+		<div class="prod-left"><center>
+			<label>ENTER Batch</label>
+			<span><textarea id="ViewId"></textarea></span>
+			<button id="viewIdButton">submit</button>
+		</center>
+		</div>
+		<div class="prod-right">
+			<img src="https://github.com/abhinanduN/codepen/blob/master/human-image.png?raw=true" class="prod-human-img" alt="prod"/>
+		</div>
+	</div>
+</div>
+<script>
+$(".prod-logo").hover(function () {
+    $(".inner").addClass("inner-hover");
+    $(".nav-li").slideDown(500);
+  },
+  function () {
+    $(".inner").removeClass("inner-hover");
+   $(".nav-li").slideUp(500);
+  }
+);
+</script>
+<script type="text/javascript">
+	document.getElementById("viewIdButton").onclick=function(){
+		console.log(SC,SD);
+	};
+</script>
+</body>
+</html>

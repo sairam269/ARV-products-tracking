@@ -1,0 +1,124 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+</head>
+<body>
+<div class="outer">
+    <div class="prod-logo">
+        <img src="https://github.com/abhinanduN/codepen/blob/master/prod.png?raw=true" class="prod-img" alt="icon"/>
+        <ul class="main-nav">
+            <li class="nav-li"><a href="index.html">Home</a></li>
+            <li class="nav-li"><a href="#">About</a></li>
+            <li class="nav-li"><a href="file.html">Manufacture Details</a></li>
+            <li class="nav-li"><a href="tc.html">Transport Detail</a></li>
+      <li class="nav-li"><a href="view.html">Track product</a></li>
+      </ul>
+    </div>
+    <div class="inner">
+        <div class="prod-left">
+                  <div>
+       <center>
+
+      <form action=onclick>
+          <table align="center">
+         <tr> 
+         <th> Batch Number </th>
+         <td>
+             <input type = "text" id= "Id" placeholder="ID1234"/> <br>
+             </td>  
+         </tr>
+         <tr>
+             <th> Company Name </th>
+         <td>
+            <input type = "text" id= "CompanyName" /> <br> 
+         </td>
+         </tr>
+         <tr>
+             <th> Manufacturing Date</th>
+         <td> <input type = "text" id= "ManuDate" placeholder="dd/mm/yyyy"/> <br>
+         </td>
+         </tr>
+        <tr>
+            <th> Expiry Date</th>
+        <td>
+            <input type = "text" id= "ExpDate" placeholder="dd/mm/yyyy"/>
+         <br></td>
+         </tr>
+         <tr>
+             <th>
+                 Price 
+             </th>
+             <td>
+                 <input type = "text" id= "price" />
+         <br>
+             </td>
+         </tr>
+
+         <tr> 
+         <th> Mode Of Transport </th>
+         <td>
+             <input type = "text" id= "TransportMode" placeholder="Ship,Fligth,.."/> <br>
+             </td>  
+         </tr>
+         <tr>
+             <th> Transporter Name </th>
+         <td>
+            <input type = "text" id= "TransporterName" /> <br> 
+         </td>
+         </tr>
+         <tr>
+             <th> Source </th>
+         <td> <input type = "text" id= "source" /> <br>
+         </td>
+         </tr>
+        <tr>
+            <th> Destination</th>
+        <td>
+            <input type = "text" id= "Destination" />
+         <br></td>
+         </tr>
+         <tr>
+             <th>
+                 Date 
+             </th>
+             <td>
+                 <input type = "text" id= "date" placeholder="dd/mm/yyyy"/>
+         <br>
+             </td>
+         </tr>
+        <tr>
+             <th> Address </th>
+         <td> <input type = "text" id= "TransporterAddr" /> <br>
+         </td>
+         </tr>
+         <tr>
+             <th> Phone Number </th>
+         <td> <input type = "text" id= "TransporterPhNo" placeholder="1234567890"/> <br>
+         </td>
+         </tr>
+         </table>
+            <a href="tc.html"><button id="buttonTC">submit</button></a>
+        </form>
+      </center>
+      </div>
+        </div>
+        <div class="prod-right">
+            <img src="https://github.com/abhinanduN/codepen/blob/master/human-image.png?raw=true" class="prod-human-img" alt="prod"/>
+        </div>
+    </div>
+
+</div>
+<script>
+$(".prod-logo").hover(function () {
+    $(".inner").addClass("inner-hover");
+    $(".nav-li").slideDown(500);
+  },
+  function () {
+    $(".inner").removeClass("inner-hover");
+   $(".nav-li").slideUp(500);
+  }
+);
+</script>
+</body>
+</html>
